@@ -13,31 +13,35 @@ export default class Structure_BinarySearch extends Component {
       return (
       	<div>
 				<h5>Structure:</h5>
-				<pre><code className='javascript'>
-				function binarySearch(__) {'{'}
-
+				<samp>
+					function doSearch(__) {'{'}
+				</samp><br /><br />
+				<samp>
 					var begin = __;
+				</samp><br />
+				<samp>
 					var end = __;
-	
-					while (__) {
-						
-					  // var mid = Math.floor( (begin+end) / 2 );
-					  
-				   //    if (arr[mid] < num) {
-				   //    	begin = mid + 1;
-				   //    }
-				   //    else if (arr[mid] == num) {
-				   //    	return mid;
-				   //    }
-				   //    else {
-				   //    	end = mid - 1;
-				   //    }
+				</samp><br /><br />
+				<samp>
+					while (__) {'{'}
+				</samp><br /><br />
+				<samp>
+					var mid = __;
+				</samp><br /><br />
+				<samp>
+				    if (__ === __) {'{'}
+				</samp><br /><br />
+				<samp>
 					}
-
+				</samp><br />
+				<samp>
+					else if (__ {'<'} __) {'{'}
+				</samp>
+				<samp>
 				   return __;
 
 				{'}'}
-				</code></pre>
+				</samp>
 			</div>
       );
   }
