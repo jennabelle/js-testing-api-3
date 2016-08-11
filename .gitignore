@@ -1,0 +1,9 @@
+/node_modules
+/bower_components
+bundle.js
+npm-debug.log
+.env
+
+# IntelliJ
+*.iml
+/.idea

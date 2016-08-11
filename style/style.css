@@ -1,0 +1,13 @@
+.aceEditor {
+	font-size: 14px !important;
+	border: 1px solid #d3d3d3;
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	bottom: 100px;
+	left: 100px;
+}
+
+.errorMsgs {
+	color: red;
+}

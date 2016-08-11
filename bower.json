@@ -1,0 +1,31 @@
+{
+  "name": "js-testing-api",
+  "description": "a static code analysis tool to ensure users enter correct syntax to javascript code challenges",
+  "main": "index.js",
+  "authors": [
+    "Jenna Vuong <jennavuong@gmail.com>"
+  ],
+  "version": "1.0.0",
+  "license": "ISC",
+  "keywords": [
+    "khan",
+    "api",
+    "javascript parser",
+    "static code analysis",
+    "abstract syntax tree",
+    "ast"
+  ],
+  "homepage": "https://jennavuong.com",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace-builds": "1.2.4",
+    "bootstrap": "^3.3.7"
+  }
+}
