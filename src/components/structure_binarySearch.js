@@ -4,10 +4,6 @@ export default class Structure_BinarySearch extends Component {
 
 	constructor(props) {
 		super(props)
-
-		this.state = { 
-			binarySearch: ''
-		}
 	}
   render() {
       return (
