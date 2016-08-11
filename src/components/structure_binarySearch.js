@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 
 export default class Structure_BinarySearch extends Component {
-
-	constructor(props) {
-		super(props)
-	}
+	
   render() {
       return (
       	<div>
