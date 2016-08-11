@@ -44,7 +44,7 @@ export default class AceEditor extends Component {
 	    editor.setOptions({maxLines: 50});
 	    editor.getSession().on('change', function(e) { 
 
-	    	// PURPOSE: wait for user to stop typing, then run javascript
+	    	/** PURPOSE: wait for user to stop typing, then run javascript **/
 	    	// clear timeout if it has already been set - this prevents the previous task from executing if it has been less than 600ms
 			clearTimeout(timeout)
 
