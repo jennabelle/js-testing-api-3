@@ -24,7 +24,9 @@ Test the Structure:
 
 1. Type 'function test(a) { }' quickly, without stopping
 2. Stop typing for 1 second
-3. Verify error appears above editor: 'Function block MUST use 2 parameters'
+3. Verify error appears above editor: 'MUST have 2 parameters e.g. function test(a,b)'
+4. Add a second parameter to what you just typed e.g., 'function test(a,b) { }'
+5. Verify error disappears
 
 
 Test Whitelist Functionality:
