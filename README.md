@@ -40,6 +40,10 @@ Test Blacklist Functionality:
 
 ###Notes on Process###
 
+Things I learned: It was much easier to start off making all required functionality working with HTML text area first, then incorporate Ace code editor afterward. Another challenge I
+had was sometimes when you install and start to use a js library, there are innate errors to that package. For example, in estraverse.js, once installed there was a module loader
+error and I learned I had to install and configure the 'json-loader' package to webpack. Likewise, when I tried to use the react-ace library, there was a different error about not being
+able to read 'acequire' of undefined. I eventually scrapped react-ace and aimed for the lightweight wrapper for ace code editor. Also this was my first time using estraverse.js and 
 
 ###Tech Stack###
 
