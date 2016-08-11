@@ -36,13 +36,26 @@ export default class Structure_BinarySearch extends Component {
 				</samp><br />
 				<samp>
 					else if (__ {'<'} __) {'{'}
-				</samp>
+				</samp><br /><br />
+				<samp>
+					}
+				</samp><br />
+				<samp>
+					else (__) {'{'}
+				</samp><br /><br />
+				<samp>
+					}
+				</samp><br />
+				<samp>
+					}
+				</samp><br />
 				<samp>
 				   return __;
-
+				</samp><br />
+				<samp>
 				{'}'}
 				</samp>
-			</div>
+		</div>
       );
   }
 }
