@@ -16,6 +16,17 @@ export default class AceEditor extends Component {
 		this.transformInputToAST = this.transformInputToAST.bind(this)
 		this.validateSyntax = this.validateSyntax.bind(this)
 	}
+
+	static propTypes = {
+	    mode: React.PropTypes.string,
+	    content: React.PropTypes.string,
+	};
+
+	static defaultProps = {
+	    mode: 'javascript',
+	    code: '//write your code here',
+	}
+
 	componentDidMount() {
 
 		// init a timeout variable to be used below
@@ -24,22 +35,27 @@ export default class AceEditor extends Component {
 		// bind to component instead of editor
 		let that = this
 
-		// get input text area
-		const editor = ReactDOM.findDOMNode(this.refs.userInput)
+		const node = ReactDOM.findDOMNode(this.refs.codeEditor);
+	    const editor = ace.edit(node);
+	    editor.setTheme("ace/theme/clouds");
+	    editor.getSession().setMode("ace/mode/javascript");
+	    editor.setShowPrintMargin(false);
+	    editor.setOptions({minLines: 20});
+	    editor.setOptions({maxLines: 50});
+	    editor.getSession().on('change', function(e) { 
 
-		editor.onkeyup = function(e) {
-
-			// clear timeout if it has already been set - this prevents the previous task from executing if it has been less than 600ms
+	    	// PURPOSE: wait for user to stop typing, then run javascript
+	    	// clear timeout if it has already been set - this prevents the previous task from executing if it has been less than 600ms
 			clearTimeout(timeout)
 
 			// make new timeout set to go off in 700ms
 			timeout = setTimeout( () => {
 
-				that.setState({ userInput: editor.value })
+				that.setState({ userInput: editor.getValue() })
 
 				that.transformInputToAST( that.state.userInput )
 			}, 700)
-		}
+	    })
 	}
 	transformInputToAST(userInput) { 
 
@@ -105,7 +121,7 @@ export default class AceEditor extends Component {
       		<div className="row">
       			<div className="col-md-6">
 		      		<RenderMsgs structure={ this.state.structure } whiteList={ this.state.whiteList } blackList={ this.state.blackList } />
-		      		<textarea ref="userInput" rows="20" cols="70" placeholder="// your code here" />
+		      		<div ref='codeEditor' className='aceEditor'>{ this.props.code }</div>
 	      		</div>
 	      		<div className="col-md-6">
 	      			<Structure_BinarySearch />
