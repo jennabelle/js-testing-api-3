@@ -40,7 +40,7 @@ export default class AceEditor extends Component {
 	    editor.setTheme("ace/theme/clouds");
 	    editor.getSession().setMode("ace/mode/javascript");
 	    editor.setShowPrintMargin(false);
-	    editor.setOptions({minLines: 20});
+	    editor.setOptions({minLines: 25});
 	    editor.setOptions({maxLines: 50});
 	    editor.getSession().on('change', function(e) { 
 

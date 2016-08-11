@@ -16,40 +16,40 @@ export default class Structure_BinarySearch extends Component {
 				<samp>
 					function doSearch(__) {'{'}
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;
 					var begin = __;
 				</samp><br />
-				<samp>
+				<samp>&nbsp;&nbsp;
 					var end = __;
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;
 					while (__) {'{'}
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					var mid = __;
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 				    if (__ === __) {'{'}
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					}
 				</samp><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					else if (__ {'<'} __) {'{'}
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					}
 				</samp><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					else (__) {'{'}
 				</samp><br /><br />
-				<samp>
+				<samp>&nbsp;&nbsp;&nbsp;&nbsp;
 					}
 				</samp><br />
-				<samp>
+				<samp>&nbsp;&nbsp;
 					}
-				</samp><br />
-				<samp>
+				</samp><br /><br />
+				<samp>&nbsp;&nbsp;
 				   return __;
 				</samp><br />
 				<samp>
