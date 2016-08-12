@@ -40,20 +40,20 @@ Test the Structure:
 
 Test Whitelist Functionality:
 
-1. Type 'function test(a,b) { if(true) {} }' quickly, without stopping
-2. Stop typing for 1 second
-3. Verify error appears above editor: 'MUST use WHILE loop inside function block'
-4. Add a While loop inside function block e.g., 'function test(a,b) { if(true) { } while(true) { } }'
-5. Verify error disappears
+    1. Type 'function test(a,b) { if(true) {} }' quickly, without stopping
+    2. Stop typing for 1 second
+    3. Verify error appears above editor: 'MUST use WHILE loop inside function block'
+    4. Add a While loop inside function block e.g., 'function test(a,b) { if(true) { } while(true) { } }'
+    5. Verify error disappears
 
 
 Test Blacklist Functionality:
 
-1. Type 'function test(a,b) { while(true) { } while(true) { } }' quickly, without stopping
-2. Stop typing for 1 second
-3. Verify error appears above editor: 'Must NOT have more than 1 While loop inside function block'
-4. Erase one of the While loops e.g., 'function test(a,b) { while(true) { } }'
-5. Verify error disappears
+    1. Type 'function test(a,b) { while(true) { } while(true) { } }' quickly, without stopping
+    2. Stop typing for 1 second
+    3. Verify error appears above editor: 'Must NOT have more than 1 While loop inside function block'
+    4. Erase one of the While loops e.g., 'function test(a,b) { while(true) { } }'
+    5. Verify error disappears
 
 ###Notes on Process###
 
