@@ -65,10 +65,10 @@ Things I learned:
 2. Another challenge I had was sometimes when you install and start to use a library, there are innate errors to that package. For example, in estraverse.js, once installed 
 there was a module loader error and I learned I had to install and configure the 'json-loader' package to webpack.config. Likewise, when I tried to use the react-ace library, 
 there was a different error about not being able to read 'acequire' of undefined. I eventually scrapped react-ace and aimed for a lightweight wrapper for ace code editor. 
-3. This was my first time using estraverse.js and I learned the power of using libraries for quick iteration. 
-4. It was also my first time using Esprima and learned that when you type code that is not well-formed, Esprima will throw an error in the console e.g., 'Uncaught Error: Unexpected token('. 
-This makes sense because Esprima wasnt able to make a well-formed AST from it.
-5. Another important thing I learned was how to use clearTimeout and setTimeout to simulate a dynamic typing experience for the user.
+3. This was my first time using estraverse.js and realized the power of using libraries for quick iteration. 
+4. It was also my first time using Esprima and learned that when you type code that is not well-formed, Esprima will throw an error in the console e.g., 'Uncaught Error: Line 1: Unexpected token('. 
+This makes sense because Esprima wasnt able to create a well-formed AST from it.
+5. Another important thing I learned was how to use clearTimeout and setTimeout to simulate a dynamic user experience.
 
 ###Tech Stack###
 
