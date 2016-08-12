@@ -1,6 +1,9 @@
 # js-testing-api-3
 ####A static code analysis tool to ensure users enter correct syntax to javascript code challenges
 
+
+###Screenshots###
+
 <span width="30px" height="30px"><img src="./public/images/screenshot1.png"></span>
 <span width="30px" height="30px"><img src="./public/images/screenshot2.png"></span>
 <span width="30px" height="30px"><img src="./public/images/screenshot3.png"></span>
