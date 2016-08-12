@@ -1,7 +1,7 @@
 # js-testing-api-3
 A static code analysis tool to ensure users enter correct syntax to javascript code challenges
 
-<span width="50px" height="50px"><img src="./public/images/screenshot1.png"></span>
+<span width="30px" height="30px"><img src="./public/images/screenshot1.png"></span>
 
 ###Getting Started###
 
