@@ -13,6 +13,7 @@ A static code analysis tool to ensure users enter correct syntax to javascript c
 ###Getting Started###
 
 	npm install
+    
     bower install
 
 ###To Start Server###
