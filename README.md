@@ -58,7 +58,7 @@ Test Blacklist Functionality:
 
 ###Notes on Process###
 
-I really enjoyed working on this project, it was really fun learning about the Abstract Syntax Tree, Esprima, Estraverse, Escodegen, and the Ace code editor!
+I really enjoyed working on this, it was really fun learning about the Abstract Syntax Tree, Esprima, Estraverse, Escodegen, and the Ace code editor!
 
 Things I learned: 
 
