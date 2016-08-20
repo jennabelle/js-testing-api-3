@@ -75,7 +75,13 @@ export default class AceEditor extends Component {
 			}
 		})
 
-		if (numOfParams !== 2) {
+		/**********************************
+		There are 3 possible outcomes here:
+			1. numOfParams is 2 --> clear error msg (when user input is correct)
+			2. numOfParams is 0 --> clear error msgs (when code editor is blank)
+			3. numOfParams is not 0 or 2 --> show error msg (when user input is incorrect)
+		***********************************/
+		if (numOfParams > 0 && numOfParams !== 2) {
 			this.setState({
 				structure: [ ErrorMsgHelper.getErrorMsg('needTwoParams') ]
 			})
