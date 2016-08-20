@@ -59,6 +59,8 @@ export default class AceEditor extends Component {
 	}
 	transformInputToAST(userInput) { 
 
+		// TO-DO: Need to handle when code editor is empty, no ast
+
 		let ast = Esprima.parse( userInput, {tolerant: true} )
 		this.validateSyntax(ast)
 	}
@@ -95,9 +97,17 @@ export default class AceEditor extends Component {
 
 		Estraverse.traverse(ast, {
 		   enter: function(node) {
-		      if (node.type === 'WhileStatement') {
-		         numOfWhileLoops++;
-		      }
+
+		   		// check only if while loop inside function block
+		   		if (node.type === 'FunctionDeclaration') {
+
+		   			// iterate over node.body['body']
+		   			for (var i = 0; i < node.body['body'].length; i++) {
+		   				if (node.body['body'][i]['type'] === 'WhileStatement') {
+		        			numOfWhileLoops++;
+		     			}
+		   			}
+		   		}
 		    }
 		})
 
