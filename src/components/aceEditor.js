@@ -59,7 +59,7 @@ export default class AceEditor extends Component {
 	}
 	transformInputToAST(userInput) { 
 
-		// TO-DO: Need to handle when code editor is empty, no ast
+		/** TO-DO: Need to handle when code editor is empty, no ast **/
 
 		let ast = Esprima.parse( userInput, {tolerant: true} )
 		this.validateSyntax(ast)
