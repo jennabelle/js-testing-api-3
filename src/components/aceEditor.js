@@ -4,7 +4,7 @@ import Esprima from 'esprima'
 import Estraverse from 'estraverse'
 import ErrorMsgHelper from '../helpers/errorMsgHelper'
 import RenderMsgs from './renderMsgs'
-import Structure_BinarySearch from './structure_BinarySearch'
+import Structure_BinarySearch from './structure_binarySearch'
 
 export default class AceEditor extends Component {
 
