@@ -132,7 +132,7 @@ export default class AceEditor extends Component {
 	render() {
       return (
       	<div>
-      		<h2>Implement binary search</h2>
+      		<h2>Implement binary search algorithm</h2>
       		<p className="lead">Return either the index of the location in the array, or <code>-1</code> if the array did not contain the targetValue</p>
       		<div className="row">
       			<div className="col-md-6">
