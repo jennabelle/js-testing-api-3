@@ -1,7 +1,7 @@
 # js-testing-api-3
 A static code analysis tool to ensure users enter correct syntax to javascript code challenges.
 
-
+Demo the app [here](https://javascript-challenges.herokuapp.com/).
 
 ###Screenshots###
 
