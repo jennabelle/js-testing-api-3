@@ -3,20 +3,20 @@ A static code analysis tool to ensure users enter correct syntax to javascript c
 
 Demo the app [here](https://javascript-challenges.herokuapp.com/).
 
-###Screenshots###
+### Screenshots
 
 
 <span width="30px" height="30px"><img src="./public/images/screenshot1.png"></span>
 <span width="30px" height="30px"><img src="./public/images/screenshot2.png"></span>
 <span width="30px" height="30px"><img src="./public/images/screenshot3.png"></span>
 
-###Getting Started###
+### Getting Started
 
 	npm install
 
     bower install
 
-###To Start Server###
+### To Start Server
 
     npm start
 
@@ -24,11 +24,11 @@ Go to:
 
     http://localhost:8080
 
-###To Run Unit Tests###
+### To Run Unit Tests
 
     npm test
 
-###To Conduct Functional Tests###
+### To Conduct Functional Tests
 
 Test the Structure:
 
@@ -56,7 +56,7 @@ Test Blacklist Functionality:
     4. Erase one of the While loops e.g., 'function test(a,b) { while(true) { } }'
     5. Verify error disappears
 
-###Notes on Process###
+### Notes on Process
 
 I really enjoyed working on this, it was really fun learning about the Abstract Syntax Tree, Esprima, Estraverse, Escodegen, and the Ace code editor!
 
@@ -71,7 +71,7 @@ there was a different error about not being able to read 'acequire' of undefined
 This makes sense because Esprima wasnt able to create a well-formed AST from it.
 5. Another important thing I learned was how to use clearTimeout and setTimeout to simulate a dynamic user experience.
 
-###Tech Stack###
+### Tech Stack
 
     React
     Node.js
